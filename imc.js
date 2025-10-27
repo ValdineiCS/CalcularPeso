@@ -41,4 +41,4 @@ inAltura.value=""
 res.textContent=""
 inNome.focus()
 
-})
+});
