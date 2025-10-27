@@ -25,20 +25,23 @@ function calcular(){
         
     }else{
         if(masculino){
-            var peso=22*Math.pow(altura, 2).toFixed(2);
+            var peso=22*Math.pow(altura, 2);
         }else{
-            var peso=21*Math.pow(altura, 2).toFixed(2);
+            var peso=21*Math.pow(altura, 2);
         }
     }
     res.textContent=`${nome}: Seu peso ideal é ${peso.toFixed(2)}kg`
 }
 
 botaoLimpar.addEventListener('click', limpar =>{
-inNome.value=""
+/*inNome.value=""
 sexM.checked=false;
 sexF.checked=false;
 inAltura.value=""
 res.textContent=""
-inNome.focus()
+inNome.focus()*/
+
+location.reload();
+inNome.focus();
 
 });
